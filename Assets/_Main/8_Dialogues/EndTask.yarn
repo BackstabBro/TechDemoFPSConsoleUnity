@@ -1,0 +1,10 @@
+﻿title: EndTask
+---
+<<if hasActiveTask("task_1")>>
+U come to complete task?
+-> complete task_1!
+    <<completeTask "task_1">>
+<<else>>
+I have no tasks for you!
+<<endif>>
+===

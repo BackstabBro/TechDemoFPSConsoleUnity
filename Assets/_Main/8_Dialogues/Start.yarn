@@ -1,0 +1,12 @@
+﻿title: Start
+---
+<<if isTaskAvaible("task_1")>>
+Hello take task_1 - speak with red guy!
+-> take task_1 <<if isTaskAvaible("task_1")>>
+    <<addTask "task_1">>
+<<elseif hasActiveTask("task_1")>>
+Go to other guy
+<<else>>
+Im done man, no talking anymore
+<<endif>>
+===
